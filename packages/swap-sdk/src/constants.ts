@@ -4,6 +4,7 @@ import { ERC20Token } from './entities/token'
 export enum ChainId {
   ETHEREUM = 1,
   GOERLI = 5,
+  BASE_GOERLI = 84531,
   BSC = 56,
   BSC_TESTNET = 97,
 }
@@ -15,18 +16,25 @@ export const FACTORY_ADDRESS = '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73'
 
 const FACTORY_ADDRESS_ETH = '0x1097053Fd2ea711dad45caCcc45EfF7548fCB362'
 
+const FACTORY_ADDRESS_BASE = '0xBf19e38F6748C65096eF1b706212Fb66f89D221d'
+
+
 export const FACTORY_ADDRESS_MAP: Record<number, string> = {
   [ChainId.ETHEREUM]: FACTORY_ADDRESS_ETH,
   [ChainId.GOERLI]: FACTORY_ADDRESS_ETH,
+  [ChainId.BASE_GOERLI]: FACTORY_ADDRESS_BASE,
   [ChainId.BSC]: FACTORY_ADDRESS,
   [ChainId.BSC_TESTNET]: '0x6725f303b657a9451d8ba641348b6761a6cc7a17',
 }
 export const INIT_CODE_HASH = '0x00fb7f630766e6a796048ea87d01acd3068e8ff67d078148a3fa3f4a84f69bd5'
 
 const INIT_CODE_HASH_ETH = '0x57224589c67f3f30a6b0d7a1b54cf3153ab84563bc609ef41dfb34f8b2974d2d'
+const INIT_CODE_HASH_BASE = '0xd8f614057663bdaaf12d6b9c026847f6028aab57a5226118abbf68a5d119d65a'
+
 export const INIT_CODE_HASH_MAP: Record<number, string> = {
   [ChainId.ETHEREUM]: INIT_CODE_HASH_ETH,
   [ChainId.GOERLI]: INIT_CODE_HASH_ETH,
+  [ChainId.BASE_GOERLI]: INIT_CODE_HASH_BASE,
   [ChainId.BSC]: INIT_CODE_HASH,
   [ChainId.BSC_TESTNET]: '0xd0d4c4cd0848c93cb4fd1f498d7013ee6bfb25783ea21593d5834f5d250ece66',
 }
@@ -43,6 +51,14 @@ export const WETH9 = {
   [ChainId.GOERLI]: new ERC20Token(
     ChainId.GOERLI,
     '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6',
+    18,
+    'WETH',
+    'Wrapped Ether',
+    'https://weth.io'
+  ),
+  [ChainId.BASE_GOERLI]: new ERC20Token(
+    ChainId.BASE_GOERLI,
+    '0x4200000000000000000000000000000000000006',
     18,
     'WETH',
     'Wrapped Ether',
@@ -80,6 +96,7 @@ export const WBNB = {
 export const WNATIVE: Record<number, ERC20Token> = {
   [ChainId.ETHEREUM]: WETH9[ChainId.ETHEREUM],
   [ChainId.GOERLI]: WETH9[ChainId.GOERLI],
+  [ChainId.BASE_GOERLI]: WETH9[ChainId.BASE_GOERLI],
   [ChainId.BSC]: WBNB[ChainId.BSC],
   [ChainId.BSC_TESTNET]: WBNB[ChainId.BSC_TESTNET],
 }
@@ -94,6 +111,7 @@ export const NATIVE: Record<
 > = {
   [ChainId.ETHEREUM]: { name: 'Ether', symbol: 'ETH', decimals: 18 },
   [ChainId.GOERLI]: { name: 'Goerli Ether', symbol: 'GOR', decimals: 18 },
+  [ChainId.BASE_GOERLI]: { name: 'Goerli Ether', symbol: 'ETH', decimals: 18 },
   [ChainId.BSC]: {
     name: 'Binance Chain Native Token',
     symbol: 'BNB',

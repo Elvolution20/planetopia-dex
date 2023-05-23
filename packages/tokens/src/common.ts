@@ -52,6 +52,14 @@ export const USDC_GOERLI = new ERC20Token(
   'test USD Coin',
 )
 
+export const USDC_BASE_GOERLI = new ERC20Token(
+  ChainId.BASE_GOERLI,
+  '0x07865c6E87B9F70255377e024ace6630C1Eaa37F',
+  6,
+  'tUSDC',
+  'test USD Coin',
+)
+
 export const USDT_BSC = new ERC20Token(
   ChainId.BSC,
   '0x55d398326f99059fF775485246999027B3197955',
@@ -106,9 +114,19 @@ export const BUSD_GOERLI = new ERC20Token(
   'https://www.paxos.com/busd/',
 )
 
+export const BUSD_BASE_GOERLI = new ERC20Token(
+  ChainId.BASE_GOERLI,
+  '0xb809b9B2dc5e93CB863176Ea2D565425B03c0540',
+  18,
+  'BUSD',
+  'Binance USD',
+  'https://www.paxos.com/busd/',
+)
+
 export const BUSD: Record<ChainId, ERC20Token> = {
   [ChainId.ETHEREUM]: BUSD_ETH,
   [ChainId.GOERLI]: BUSD_GOERLI,
+  [ChainId.BASE_GOERLI]: BUSD_BASE_GOERLI,
   [ChainId.BSC]: BUSD_BSC,
   [ChainId.BSC_TESTNET]: BUSD_TESTNET,
 }
@@ -123,6 +141,7 @@ export const USDC = {
   [ChainId.BSC_TESTNET]: USDC_TESTNET,
   [ChainId.ETHEREUM]: USDC_ETH,
   [ChainId.GOERLI]: USDC_GOERLI,
+  [ChainId.BASE_GOERLI]: USDC_BASE_GOERLI,
 }
 
 export const USDT = {
