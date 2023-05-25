@@ -31,13 +31,13 @@ const UserMenuItems = () => {
     isWrongNetwork 
   } = useActiveChainId()
   const { logout } = useAuth()
-  const { address: account } = useAccount()
+  // const { address: account } = useAccount()
   const { hasPendingTransactions } = usePendingTransactions()
-  const { isInitialized, isLoading, profile } = useProfile()
+  // const { isInitialized, isLoading, profile } = useProfile()
   const [onPresentWalletModal] = useModal(<WalletModal initialView={WalletView.WALLET_INFO} />)
   const [onPresentTransactionModal] = useModal(<WalletModal initialView={WalletView.TRANSACTIONS} />)
   const [onPresentWrongNetworkModal] = useModal(<WalletModal initialView={WalletView.WRONG_NETWORK} />)
-  const hasProfile = isInitialized && !!profile
+  // const hasProfile = isInitialized && !!profile
 
   const onClickWalletMenu = useCallback((): void => {
     if (isWrongNetwork) {

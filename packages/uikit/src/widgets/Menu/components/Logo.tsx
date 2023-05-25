@@ -4,7 +4,6 @@ import Flex from "../../../components/Box/Flex";
 import { MenuContext } from "../context";
 
 interface Props {
-  isDark: boolean;
   href: string;
 }
 
@@ -42,7 +41,7 @@ const StyledLink = styled("a")`
   }
 `;
 
-const Logo: React.FC<React.PropsWithChildren<Props>> = ({ isDark, href }) => {
+const Logo: React.FC<React.PropsWithChildren<Props>> = ({ href }) => {
   const { linkComponent } = useContext(MenuContext);
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
@@ -67,4 +66,4 @@ const Logo: React.FC<React.PropsWithChildren<Props>> = ({ isDark, href }) => {
   );
 };
 
-export default React.memo(Logo, (prev, next) => prev.isDark === next.isDark);
+export default React.memo(Logo, (prev, next) => prev === next);

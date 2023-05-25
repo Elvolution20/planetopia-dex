@@ -1,6 +1,7 @@
 import { BinanceWalletConnector } from '@pancakeswap/wagmi/connectors/binanceWallet'
 import { BloctoConnector } from '@pancakeswap/wagmi/connectors/blocto'
-import { bsc, bscTestnet, goerli, mainnet } from 'wagmi/chains'
+import { bsc, goerli, mainnet } from 'wagmi/chains'
+import { Chain } from '@wagmi/core';
 import { configureChains, createClient } from 'wagmi'
 import memoize from 'lodash/memoize'
 import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet'
@@ -10,7 +11,7 @@ import { WalletConnectConnector } from 'wagmi/connectors/walletConnect'
 import { LedgerConnector } from 'wagmi/connectors/ledger'
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc'
 import { SafeConnector } from './safeConnector'
-import { Chain } from '@wagmi/core';
+
 
 const baseGoerli: Chain = {
   id: 84531, // Replace with the actual ID of Base Goerli
