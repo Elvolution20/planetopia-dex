@@ -40,7 +40,7 @@ const SpeechBubble = styled.div`
   }
 `
 
-const domain = 'https://pancakeswap.finance'
+const domain = 'https://planetopia.finance'
 
 const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const { t } = useTranslation()
@@ -82,11 +82,11 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
         <>
           <InnerContainer>
             <img
-              src="/images/decorations/phishing-warning-bunny.webp"
+              src="/images/decorations/phishing-astronaut.png"
               alt="phishing-warning"
               width="92px"
               onError={(e) => {
-                const fallbackSrc = '/images/decorations/phishing-warning-bunny.png'
+                const fallbackSrc = '/images/decorations/phishing-astronaut.png'
                 if (!e.currentTarget.src.endsWith(fallbackSrc)) {
                   // eslint-disable-next-line no-param-reassign
                   e.currentTarget.src = fallbackSrc

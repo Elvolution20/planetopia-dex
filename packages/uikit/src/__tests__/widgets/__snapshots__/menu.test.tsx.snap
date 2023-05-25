@@ -1430,7 +1430,7 @@ exports[`renders correctly 1`] = `
                     />
                     <stop
                       offset="1"
-                      stop-color="#1FC7D4"
+                      stop-color="#fd961a"
                     />
                   </lineargradient>
                 </defs>
@@ -3788,7 +3788,7 @@ exports[`renders correctly 1`] = `
                     />
                     <stop
                       offset="1"
-                      stop-color="#1FC7D4"
+                      stop-color="#fd961a"
                     />
                   </lineargradient>
                 </defs>
@@ -3809,7 +3809,7 @@ exports[`renders correctly 1`] = `
             scale="sm"
             target="_blank"
           >
-            Buy CAKE
+            Buy PLANET
             <svg
               class="c57"
               color="backgroundAlt"

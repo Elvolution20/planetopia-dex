@@ -57,9 +57,9 @@ export const LayerZeroWidget = ({ theme }: { theme: PancakeTheme }) => {
 
         .css-1ay9vb9 .css-9k6lzc-LzButton,
         .css-1ay9vb9 .css-1s9mcc4-LzButton {
-          border: 1px solid #1fc7d4;
+          border: 1px solid #fd961a;
           border-radius: 8px;
-          color: #1fc7d4;
+          color: #fd961a;
           background: transparent;
         }
 

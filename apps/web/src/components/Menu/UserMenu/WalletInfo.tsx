@@ -21,7 +21,7 @@ import { ChainLogo } from 'components/Logo/ChainLogo'
 import { getBlockExploreLink, getBlockExploreName } from 'utils'
 import { formatBigNumber, getFullDisplayBalance } from '@pancakeswap/utils/formatBalance'
 import { useBalance } from 'wagmi'
-import CakeBenefitsCard from './CakeBenefitsCard'
+// import CakeBenefitsCard from './CakeBenefitsCard'
 
 const COLORS = {
   ETH: '#627EEA',
@@ -44,8 +44,8 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowNativeBalance, onDismiss 
   const wNativeToken = !isBSC ? WNATIVE[chainId] : null
   const wBNBToken = WNATIVE[ChainId.BSC]
   const { balance: wNativeBalance, fetchStatus: wNativeFetchStatus } = useTokenBalance(wNativeToken?.address)
-  const { balance: wBNBBalance, fetchStatus: wBNBFetchStatus } = useTokenBalance(wBNBToken?.address, true)
-  const { balance: cakeBalance, fetchStatus: cakeFetchStatus } = useGetCakeBalance()
+  // const { balance: wBNBBalance, fetchStatus: wBNBFetchStatus } = useTokenBalance(wBNBToken?.address, true)
+  // const { balance: cakeBalance, fetchStatus: cakeFetchStatus } = useGetCakeBalance()
   const { logout } = useAuth()
 
   const handleLogout = () => {
@@ -112,7 +112,7 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowNativeBalance, onDismiss 
           )}
         </Box>
       )}
-      <Box mb="24px">
+      {/* <Box mb="24px">
         <Flex justifyContent="space-between" alignItems="center" mb="8px">
           <Flex bg={COLORS.BNB} borderRadius="16px" pl="4px" pr="8px" py="2px">
             <ChainLogo chainId={ChainId.BSC} />
@@ -150,8 +150,8 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowNativeBalance, onDismiss 
             <Text>{formatBigNumber(cakeBalance, 3)}</Text>
           )}
         </Flex>
-      </Box>
-      <CakeBenefitsCard onDismiss={onDismiss} />
+      </Box> */}
+      {/* <CakeBenefitsCard onDismiss={onDismiss} /> */}
       <Button variant="secondary" width="100%" minHeight={48} onClick={handleLogout}>
         {t('Disconnect Wallet')}
       </Button>
