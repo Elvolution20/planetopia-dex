@@ -2,8 +2,8 @@ import { TranslateFunction } from '@pancakeswap/localization'
 import { SalesSectionProps } from '.'
 
 export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
-  headingText: t('Trade anything. No registration, no hassle.'),
-  bodyText: t('Trade any token on BNB Smart Chain in seconds, just by connecting your wallet.'),
+  headingText: t('Trade any token in seconds on Base Goerli Chain.'),
+  bodyText: t('Join the space trade revolution - no registration, no hassle, just endless possibilities.'),
   reverse: false,
   primaryButton: {
     to: '/swap',
@@ -11,16 +11,14 @@ export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/',
+    to: 'https://docs.planetopia.finance/',
     text: t('Learn'),
     external: true,
   },
   images: {
     path: '/images/home/trade/',
     attributes: [
-      { src: 'BNB', alt: t('BNB token') },
-      { src: 'BTC', alt: t('BTC token') },
-      { src: 'CAKE', alt: t('CAKE token') },
+      { src: 'UFO', alt: t('Flying UFO') },
     ],
   },
 })
@@ -35,7 +33,7 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/products/yield-farming',
+    to: 'https://docs.planetopia.finance/products/yield-farming',
     text: t('Learn'),
     external: true,
   },

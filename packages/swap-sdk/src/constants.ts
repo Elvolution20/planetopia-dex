@@ -111,7 +111,7 @@ export const NATIVE: Record<
 > = {
   [ChainId.ETHEREUM]: { name: 'Ether', symbol: 'ETH', decimals: 18 },
   [ChainId.GOERLI]: { name: 'Goerli Ether', symbol: 'GOR', decimals: 18 },
-  [ChainId.BASE_GOERLI]: { name: 'Goerli Ether', symbol: 'ETH', decimals: 18 },
+  [ChainId.BASE_GOERLI]: { name: 'Base Goerli Ether', symbol: 'ETH', decimals: 18 },
   [ChainId.BSC]: {
     name: 'Binance Chain Native Token',
     symbol: 'BNB',

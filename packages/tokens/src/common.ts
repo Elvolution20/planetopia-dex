@@ -18,6 +18,15 @@ export const CAKE_TESTNET = new ERC20Token(
   'https://pancakeswap.finance/',
 )
 
+export const PLANET_BASE_GOERLI = new ERC20Token(
+  ChainId.BASE_GOERLI,
+  '0x3D4dfAcddb9eD4B842c52557d762465dCeF803a9',
+  18,
+  'PLANET',
+  'Planetopia Token',
+  'https://planetopia.finance/',
+)
+
 export const USDC_BSC = new ERC20Token(
   ChainId.BSC,
   '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d',
@@ -54,9 +63,9 @@ export const USDC_GOERLI = new ERC20Token(
 
 export const USDC_BASE_GOERLI = new ERC20Token(
   ChainId.BASE_GOERLI,
-  '0x07865c6E87B9F70255377e024ace6630C1Eaa37F',
+  '0x2e9F75DF8839ff192Da27e977CD154FD1EAE03cf',
   6,
-  'tUSDC',
+  'USDC',
   'test USD Coin',
 )
 
@@ -134,6 +143,11 @@ export const BUSD: Record<ChainId, ERC20Token> = {
 export const CAKE = {
   [ChainId.BSC]: CAKE_MAINNET,
   [ChainId.BSC_TESTNET]: CAKE_TESTNET,
+}
+
+export const PLANET = {
+  [ChainId.BASE_GOERLI]: PLANET_BASE_GOERLI,
+  
 }
 
 export const USDC = {

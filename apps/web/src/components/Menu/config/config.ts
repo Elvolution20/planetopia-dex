@@ -79,6 +79,7 @@ const config: (
         },
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
+    
     {
       label: t('Earn'),
       href: '#',
@@ -105,6 +106,7 @@ const config: (
         },
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
+    
     // {
     //   label: t('Win'),
     //   href: '/prediction',
