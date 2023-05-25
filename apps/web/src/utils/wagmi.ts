@@ -37,7 +37,12 @@ const baseGoerli: Chain = {
   },
 };
 
-const CHAINS = [bsc, mainnet, bscTestnet, goerli, baseGoerli]
+const CHAINS = [
+  // bsc, 
+  // mainnet, 
+  // bscTestnet, 
+  goerli, 
+  baseGoerli]
 
 const getNodeRealUrl = (networkName: string) => {
   let host = null
