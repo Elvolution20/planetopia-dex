@@ -62,7 +62,9 @@ const config = {
         protocol: 'https',
         hostname: 'static-nft.pancakeswap.com',
       },
+      
     ],
+    unoptimized: true,
   },
   async rewrites() {
     return [
