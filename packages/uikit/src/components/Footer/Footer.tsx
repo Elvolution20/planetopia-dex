@@ -5,7 +5,6 @@ import { Box, Flex } from "../Box";
 import { Link } from "../Link";
 import {
   StyledFooter,
-  StyledIconMobileContainer,
   StyledList,
   StyledListItem,
   StyledSocialLinks,
@@ -43,11 +42,8 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
       justifyContent="center"
     >
       <Flex flexDirection="column" width={["100%", null, "1200px;"]}>
-        <StyledIconMobileContainer display={["block", null, "none"]}>
-          <img src="/images/logo_desktop.svg" width="200px" />
-        </StyledIconMobileContainer>
         <Flex
-          order={[2, null, 1]}
+          order={[1, null, 2]}
           flexDirection={["column", null, "row"]}
           justifyContent="space-between"
           alignItems="flex-start"
