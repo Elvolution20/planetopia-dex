@@ -59,6 +59,22 @@
       "logoURI": "https://pancakeswap.finance/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.png"
     },
     {
+      "name": "Planetopia Token",
+      "symbol": "PLANET",
+      "address": "0x3D4dfAcddb9eD4B842c52557d762465dCeF803a9",
+      "chainId": 84531,
+      "decimals": 18,
+      "logoURI": "https://github.com/Elvolution20/planetopia-dex/blob/main/apps/web/public/logo.png"
+    },
+    {
+      "name": "Elvolution",
+      "symbol": "ELVO",
+      "address": "0x81B9508B4e61B14C51e618552E1d38a66ECf46DA",
+      "chainId": 84531,
+      "decimals": 18,
+      "logoURI": "https://github.com/Elvolution20/planetopia-dex/blob/main/apps/web/public/logo.png"
+    },
+    {
       "name": "Venus",
       "symbol": "XVS",
       "address": "0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63",
@@ -156,6 +172,14 @@
     },
     {
       "name": "Wrapped Ether",
+      "address": "0x4200000000000000000000000000000000000006",
+      "symbol": "WETH",
+      "decimals": 18,
+      "chainId": 84531,
+      "logoURI": "https://tokens.pancakeswap.finance/images/symbol/weth.png"
+    },
+    {
+      "name": "Wrapped Ether",
       "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
       "symbol": "WETH",
       "decimals": 18,
@@ -187,6 +211,14 @@
       "logoURI": "https://tokens.pancakeswap.finance/images/symbol/usdc.png"
     },
     {
+      "name": "USDC Base Goerli",
+      "address": "0x2e9F75DF8839ff192Da27e977CD154FD1EAE03cf",
+      "symbol": "USDC",
+      "decimals": 6,
+      "chainId": 84531,
+      "logoURI": "https://tokens.pancakeswap.finance/images/symbol/usdc.png"
+    },
+    {
       "name": "Tether USD",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
@@ -209,6 +241,15 @@
       "chainId": 1,
       "decimals": 8,
       "logoURI": "https://tokens.pancakeswap.finance/images/symbol/wbtc.png"
+    },
+    {
+      "name": "Wrapped BTC",
+      "symbol": "WBTC",
+      "address": "0xeA96c24CDeF2FB472b86eB51414e8D7cf2cA3302",
+      "chainId": 84531,
+      "decimals": 8,
+      "logoURI": "https://tokens.pancakeswap.finance/images/symbol/wbtc.png"
     }
+
   ]
 }
