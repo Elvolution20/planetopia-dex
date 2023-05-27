@@ -5,7 +5,7 @@ import {
   Flex,
   InjectedModalProps,
   Modal,
-  PancakeToggle,
+  // PancakeToggle,
   QuestionHelper,
   Text,
   ThemeSwitcher,
@@ -22,10 +22,10 @@ import {
   useSubgraphHealthIndicatorManager,
   useUserExpertModeAcknowledgementShow,
   useUserSingleHopOnly,
-  useUserUsernameVisibility,
+  // useUserUsernameVisibility,
   useZapModeManager,
 } from 'state/user/hooks'
-import { useStableSwapByDefault } from 'state/user/smartRouter'
+// import { useStableSwapByDefault } from 'state/user/smartRouter'
 import styled from 'styled-components'
 import ExpertModal from './ExpertModal'
 import GasSettings from './GasSettings'
@@ -73,10 +73,10 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
   const [audioPlay, toggleSetAudioMode] = useAudioModeManager()
   const [zapMode, toggleZapMode] = useZapModeManager()
   const [subgraphHealth, setSubgraphHealth] = useSubgraphHealthIndicatorManager()
-  const [userUsernameVisibility, setUserUsernameVisibility] = useUserUsernameVisibility()
+  // const [userUsernameVisibility, setUserUsernameVisibility] = useUserUsernameVisibility()
   const { onChangeRecipient } = useSwapActionHandlers()
   const { chainId } = useActiveChainId()
-  const [isStableSwapByDefault, setIsStableSwapByDefault] = useStableSwapByDefault()
+  // const [isStableSwapByDefault, setIsStableSwapByDefault] = useStableSwapByDefault()
 
   const { t } = useTranslation()
   const { isDark, setTheme } = useTheme()

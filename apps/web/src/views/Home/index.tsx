@@ -61,7 +61,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
       <PageMeta />
       <style jsx global>{`
         #home-1 .page-bg {
-          background: linear-gradient(139.73deg, #e6fdff 0%, #f3efff 100%);
+          background: linear-gradient(139.73deg, #fff7dc 0%, #f3efff 100%);
         }
         [data-theme='dark'] #home-1 .page-bg {
           background: radial-gradient(103.12% 50% at 50% 50%, #21193a 0%, #191326 100%);

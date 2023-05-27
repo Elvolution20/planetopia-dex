@@ -72,7 +72,7 @@ function MyApp(props: AppProps<{ initialReduxState: any }>) {
           content="Cheaper and faster than Uniswap? Discover Planetopia Swap, the leading DEX on Base Chain (BASE) with the best farms in DeFi."
         />
         <meta name="theme-color" content="#fd961a" />
-        <meta name="twitter:image" content="https://pancakeswap.finance/images/hero.png" />
+        <meta name="twitter:image" content="/images/hero.png" />
         <meta
           name="twitter:description"
           content="The most popular AMM on BASE! Earn PLANET through yield farming , then stake it in BlackHole Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by Planetopia Finance), NFTs, and more, on a platform you can trust."

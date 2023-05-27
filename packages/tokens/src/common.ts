@@ -24,7 +24,7 @@ export const PLANET_BASE_GOERLI = new ERC20Token(
   18,
   'PLANET',
   'Planetopia Token',
-  'https://planetopia.finance/',
+  'https://planetopia.fi/',
 )
 
 export const USDC_BSC = new ERC20Token(

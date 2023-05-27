@@ -6,7 +6,7 @@ export const DEFAULT_META: PageMeta = {
   title: 'Planetopia Swap',
   description:
     'The most popular AMM on BASE Chain by user count! Earn PLANET through yield farming then stake it in Blackhole Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by Planetopia Finance), NFTs, and more, on a platform you can trust.',
-  image: 'https://pancakeswap.finance/images/hero.png',
+  image: '/images/hero.png',
 }
 
 interface PathList {
@@ -36,9 +36,9 @@ const getPathList = (t: ContextApi['t']): PathList => {
       '/voting': { basePath: true, title: t('Voting') },
       '/voting/proposal': { title: t('Proposals') },
       '/voting/proposal/create': { title: t('Make a Proposal') },
-      '/info': { title: t('Overview'), description: 'View statistics for Pancakeswap exchanges.' },
-      '/info/pairs': { title: t('Pairs'), description: 'View statistics for Pancakeswap exchanges.' },
-      '/info/tokens': { title: t('Tokens'), description: 'View statistics for Pancakeswap exchanges.' },
+      '/info': { title: t('Overview'), description: 'View statistics for PlanetopiaSwap exchanges.' },
+      '/info/pairs': { title: t('Pairs'), description: 'View statistics for PlanetopiaSwap exchanges.' },
+      '/info/tokens': { title: t('Tokens'), description: 'View statistics for PlanetopiaSwap exchanges.' },
       '/nfts/collections': { basePath: true, title: t('Collections') },
       '/nfts/activity': { title: t('Activity') },
       '/profile': { basePath: true, title: t('Profile') },

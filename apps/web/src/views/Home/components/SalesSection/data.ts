@@ -11,7 +11,7 @@ export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.planetopia.finance/',
+    to: 'https://docs.planetopia.fi/',
     text: t('Learn'),
     external: true,
   },
@@ -33,7 +33,7 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.planetopia.finance/products/yield-farming',
+    to: 'https://docs.planetopia.fi/products/yield-farming',
     text: t('Learn'),
     external: true,
   },
