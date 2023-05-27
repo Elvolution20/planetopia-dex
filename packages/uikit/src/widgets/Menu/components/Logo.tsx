@@ -47,7 +47,7 @@ const Logo: React.FC<React.PropsWithChildren<Props>> = ({ href }) => {
   const innerLogo = (
     <>
       <img alt="logo mobile" className="mobile-icon" src="/images/logo.png" />
-      <img alt="logo desktop" className="desktop-icon" src="/images/logo_desktop.png" />
+      <img alt="logo desktop" className="desktop-icon" src="/images/logo_desktop2.svg" />
     </>
   );
 

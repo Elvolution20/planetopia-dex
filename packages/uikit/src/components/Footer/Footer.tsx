@@ -75,7 +75,7 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
 
           
           <Box display={["none", null, "block"]}>
-            <img src="/images/logo_desktop.png" width="200px" />
+            <img src="/images/logo_desktop.svg" width="200px" />
           </Box>
         </Flex>
         <StyledSocialLinks order={[2]} pb={["42px", null, "32px"]} mb={["0", null, "32px"]} />
