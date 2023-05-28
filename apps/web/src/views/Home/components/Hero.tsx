@@ -129,7 +129,7 @@ const Hero = () => {
           position="relative"
         >
           <BunnyWrapper>
-            <Image src={astronaut} priority placeholder="blur" alt={t('Lunar bunny')} />
+            <Image src={astronaut} priority placeholder="blur" alt={t('Flying Astronaut')} />
           </BunnyWrapper>
           <StarsWrapper>
             <CompositeImage {...starsImage} />
