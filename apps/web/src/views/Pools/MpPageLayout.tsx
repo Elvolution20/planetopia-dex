@@ -1,7 +1,7 @@
 import { FC, useEffect } from 'react'
 import { useSystemInfo, listenOnBnMessage, useInterceptLink, useInjectI18n } from 'utils/mpBridge'
 import { useActiveHandle, getAccount } from 'hooks/useEagerConnect.bmp'
-import Navbar from 'components/Navbar.bmp'
+// import Navbar from 'components/Navbar.bmp'
 import { useTheme } from 'next-themes'
 
 listenOnBnMessage()
@@ -32,7 +32,7 @@ const PoolsMpPageLayout: FC<React.PropsWithChildren<unknown>> = ({ children }) =
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       {injected && children}
     </>
   )

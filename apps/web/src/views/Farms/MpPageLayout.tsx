@@ -1,7 +1,7 @@
 import { FC, useEffect } from 'react'
 import { listenOnBnMessage, useInterceptLink, useInjectI18n, useSystemInfo } from 'utils/mpBridge'
 import { useActiveHandle, getAccount } from 'hooks/useEagerConnect.bmp'
-import Navbar from 'components/Navbar.bmp'
+// import Navbar from 'components/Navbar.bmp'
 import { useTheme } from 'next-themes'
 import Farms from './Farms'
 
@@ -33,7 +33,7 @@ const FarmsMpPageLayout: FC<React.PropsWithChildren<unknown>> = ({ children }) =
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       {injected && <Farms>{children}</Farms>}
     </>
   )
