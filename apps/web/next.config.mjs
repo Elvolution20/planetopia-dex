@@ -112,6 +112,11 @@ const config = {
   async redirects() {
     return [
       {
+        source: '/',
+        destination: '/?chain=baseGoerli',
+        permanent: true,
+      },
+      {
         source: '/send',
         destination: '/swap',
         permanent: true,
