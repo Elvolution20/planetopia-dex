@@ -6,7 +6,7 @@ export const CAKE_MAINNET = new ERC20Token(
   18,
   'CAKE',
   'PancakeSwap Token',
-  'https://pancakeswap.finance/',
+  'https://planetopiaswap.xyz/',
 )
 
 export const CAKE_TESTNET = new ERC20Token(
@@ -15,7 +15,7 @@ export const CAKE_TESTNET = new ERC20Token(
   18,
   'CAKE',
   'PancakeSwap Token',
-  'https://pancakeswap.finance/',
+  'https://planetopiaswap.xyz/',
 )
 
 export const PLANET_BASE_GOERLI = new ERC20Token(
@@ -24,7 +24,7 @@ export const PLANET_BASE_GOERLI = new ERC20Token(
   18,
   'PLANET',
   'Planetopia Token',
-  'https://planetopia.fi/',
+  'https://planetopiaswap.xyz/',
 )
 
 export const USDC_BSC = new ERC20Token(

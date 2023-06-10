@@ -7,12 +7,12 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t('Documentation'),
-        href: 'https://docs.pancakeswap.finance/contact-us',
+        href: 'https://docs.planetopiaswap.xyz/contact-us',
         // isHighlighted: true,
       },
       // {
       //   label: t('Brand'),
-      //   href: 'https://docs.pancakeswap.finance/brand',
+      //   href: 'https://docs.planetopiaswap.xyz/brand',
       // },
       {
         label: t('Medium'),
@@ -20,11 +20,11 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
       },
       {
         label: t('Community'),
-        href: 'https://docs.pancakeswap.finance/contact-us/telegram',
+        href: 'https://docs.planetopiaswap.xyz/contact-us/telegram',
       },
       // {
       //   label: t('Litepaper'),
-      //   href: 'https://v2litepaper.pancakeswap.finance/',
+      //   href: 'https://v2litepaper.planetopiaswap.xyz/',
       // },
       // {
       //   label: '—',
@@ -40,15 +40,15 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t('Customer Support'),
-        href: 'https://docs.pancakeswap.finance/contact-us/customer-support',
+        href: 'https://docs.planetopiaswap.xyz/contact-us/customer-support',
       },
       // {
       //   label: t('Troubleshooting'),
-      //   href: 'https://docs.pancakeswap.finance/help/troubleshooting',
+      //   href: 'https://docs.planetopiaswap.xyz/help/troubleshooting',
       // },
       {
         label: t('Guides'),
-        href: 'https://docs.pancakeswap.finance/get-started',
+        href: 'https://docs.planetopiaswap.xyz/get-started',
       },
     ],
   },
@@ -61,19 +61,19 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
   //     },
   //     {
   //       label: t('Documentation'),
-  //       href: 'https://docs.pancakeswap.finance',
+  //       href: 'https://docs.planetopiaswap.xyz',
   //     },
   //     {
   //       label: t('Bug Bounty'),
-  //       href: 'https://docs.pancakeswap.finance/code/bug-bounty',
+  //       href: 'https://docs.planetopiaswap.xyz/code/bug-bounty',
   //     },
   //     {
   //       label: t('Audits'),
-  //       href: 'https://docs.pancakeswap.finance/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited',
+  //       href: 'https://docs.planetopiaswap.xyz/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited',
   //     },
   //     {
   //       label: t('Careers'),
-  //       href: 'https://docs.pancakeswap.finance/hiring/become-a-chef',
+  //       href: 'https://docs.planetopiaswap.xyz/hiring/become-a-chef',
   //     },
   //   ],
   // },
