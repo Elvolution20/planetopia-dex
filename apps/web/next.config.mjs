@@ -113,7 +113,7 @@ const config = {
     return [
       {
         source: '/',
-        destination: '/?chain=baseGoerli',
+        destination: 'https://planetopiaswap.xyz/?chain=baseGoerli',
         permanent: true,
       },
       {
