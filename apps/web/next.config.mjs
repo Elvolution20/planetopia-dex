@@ -112,11 +112,6 @@ const config = {
   async redirects() {
     return [
       {
-        source: '/',
-        destination: 'https://planetopiaswap.xyz/?chain=baseGoerli',
-        permanent: true,
-      },
-      {
         source: '/send',
         destination: '/swap',
         permanent: true,
