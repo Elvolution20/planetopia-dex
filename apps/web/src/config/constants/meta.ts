@@ -5,7 +5,7 @@ import { PageMeta } from './types'
 export const DEFAULT_META: PageMeta = {
   title: 'Planetopia Swap',
   description:
-    'The most popular AMM on BASE Chain by user count! Earn PLANET through yield farming then stake it in Blackhole Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by Planetopia Finance), NFTs, and more, on a platform you can trust.',
+    '🪐 The most popular AMM on BASE Chain by user count! Earn PLANET through yield farming then stake it in Blackhole Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by Planetopia Finance), NFTs, and more, on a platform you can trust.',
   image: 'https://planetopiaswap.xyz/images/hero.png',
 }
 

@@ -78,7 +78,7 @@ function MyApp(props: AppProps<{ initialReduxState: any }>) {
           content="The most popular AMM on BASE! Earn PLANET through yield farming , then stake it in BlackHole Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by Planetopia Finance), NFTs, and more, on a platform you can trust."
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="🥞 Planetopia Swap - A next evolution DeFi exchange on BASE Chain (BASE)" />
+        <meta name="twitter:title" content="🪐 Planetopia Swap - A next evolution DeFi exchange on BASE Chain (BASE) 🪐" />
         <title>Planetopia Swap</title>
         {(Component as NextPageWithLayout).mp && (
           // eslint-disable-next-line @next/next/no-sync-scripts
