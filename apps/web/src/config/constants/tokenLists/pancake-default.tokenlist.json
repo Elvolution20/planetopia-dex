@@ -25,13 +25,13 @@
       "symbol": "WETH",
       "decimals": 18,
       "chainId": 84531,
-      "logoURI": "https://tokens.planetopiaswap.xyz/images/symbol/weth.png"
+      "logoURI": "https://tokens.pancakeswap.xyz/images/symbol/weth.png"
     },
     {
       "name": "USDC Base Goerli",
       "address": "0x2e9F75DF8839ff192Da27e977CD154FD1EAE03cf",
       "symbol": "USDC",
-      "decimals": 6,
+      "decimals": 18,
       "chainId": 84531,
       "logoURI": "https://planetopiaswap.xyz/images/tokens/0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d.png"
     },

@@ -64,7 +64,7 @@ export const USDC_GOERLI = new ERC20Token(
 export const USDC_BASE_GOERLI = new ERC20Token(
   ChainId.BASE_GOERLI,
   '0x2e9F75DF8839ff192Da27e977CD154FD1EAE03cf',
-  6,
+  18,
   'USDC',
   'test USD Coin',
 )
