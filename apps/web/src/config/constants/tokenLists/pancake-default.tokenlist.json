@@ -10,14 +10,7 @@
   "logoURI": "https://planetopiaswap.xyz/logo.png",
   "keywords": ["pancake", "default"],
   "tokens": [
-    {
-      "name": "Ethereum Token",
-      "symbol": "ETH",
-      "address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
-      "chainId": 84531,
-      "decimals": 18,
-      "logoURI": "https://planetopiaswap.xyz/images/tokens/0x2170Ed0880ac9A755fd29B2688956BD959F933F8.png"
-    },
+   
     {
       "name": "Planetopia Token",
       "symbol": "PLANET",
@@ -25,14 +18,6 @@
       "chainId": 84531,
       "decimals": 18,
       "logoURI": "https://planetopiaswap.xyz/images/tokens/0x3D4dfAcddb9eD4B842c52557d762465dCeF803a9.png"
-    },
-    {
-      "name": "Elvolution",
-      "symbol": "ELVO",
-      "address": "0x81B9508B4e61B14C51e618552E1d38a66ECf46DA",
-      "chainId": 84531,
-      "decimals": 18,
-      "logoURI": "https://planetopiaswap.xyz/images/tokens/0x2170Ed0880ac9A755fd29B2688956BD959F933F8.png"
     },
     {
       "name": "Wrapped Ether",

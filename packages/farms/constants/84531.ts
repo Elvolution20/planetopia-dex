@@ -5,8 +5,8 @@ const farms: SerializedFarmConfig[] = [
   {
     pid: 34,
     vaultPid: 3,
-    lpSymbol: 'CELR-WETH LP',
-    lpAddress: '0xF8E1FA0648F87c115F26E43271B3D6e4a80A2944',
+    lpSymbol: 'PLANET-WETH LP',
+    lpAddress: '0x283f8504552acCD0E0BFd9eE039c50e6A8Cb64c7',
     quoteToken: baseTestnetTokens.weth,
     token: baseTestnetTokens.celr,
   },
