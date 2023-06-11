@@ -112,7 +112,7 @@ const Hero = () => {
             {t('Did you Know Jupiter Sat-urn Uranus?')}
           </Heading>
           <Heading scale="md" mb="24px">
-            {t('Planetopia Dex is like a vast, decentralized galaxy, full of potential and undiscovered possibilities.')}
+            {t('Planetopia Swap is like a vast, decentralized galaxy, full of potential and undiscovered possibilities.')}
           </Heading>
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}
