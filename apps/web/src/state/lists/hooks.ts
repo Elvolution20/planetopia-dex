@@ -206,6 +206,8 @@ function combineMaps(map1: TokenAddressMap, map2: TokenAddressMap): TokenAddress
     [ChainId.BASE_GOERLI]: { ...map1[ChainId.BASE_GOERLI], ...map2[ChainId.BASE_GOERLI] },
     [ChainId.BSC]: { ...map1[ChainId.BSC], ...map2[ChainId.BSC] },
     [ChainId.BSC_TESTNET]: { ...map1[ChainId.BSC_TESTNET], ...map2[ChainId.BSC_TESTNET] },
+    [ChainId.PLANQ_TESTNET]: { ...map1[ChainId.PLANQ_TESTNET], ...map2[ChainId.PLANQ_TESTNET] },
+
   }
 }
 

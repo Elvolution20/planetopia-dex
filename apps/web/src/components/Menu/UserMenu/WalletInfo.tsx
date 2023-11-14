@@ -37,7 +37,7 @@ interface WalletInfoProps {
 const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowNativeBalance, onDismiss }) => {
   const { t } = useTranslation()
   const { account, chainId, chain } = useActiveWeb3React()
-  const isBSC = chainId === ChainId.BSC
+  const isBSC = chainId === ChainId.BSC 
   // const bnbBalance = useBalance({ address: account, chainId: ChainId.BSC })
   const nativeBalance = useBalance({ address: account, enabled: !isBSC })
   const native = useNativeCurrency()
@@ -97,7 +97,7 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowNativeBalance, onDismiss 
             {!nativeBalance.isFetched ? (
               <Skeleton height="22px" width="60px" />
             ) : (
-              <Text>{formatBigNumber(nativeBalance.data.value, 6)}</Text>
+  <Text>{nativeBalance.data ? formatBigNumber(nativeBalance.data.value, 6) : '0'}</Text>
             )}
           </Flex>
           {wNativeBalance.gt(0) && (

@@ -20,6 +20,14 @@
       "logoURI": "https://planetopiaswap.xyz/images/tokens/planet.png"
     },
     {
+      "name": "Planetopia Token",
+      "symbol": "PLANET",
+      "address": "0x3D4dfAcddb9eD4B842c52557d762465dCeF803a9",
+      "chainId": 700707,
+      "decimals": 18,
+      "logoURI": "https://planetopiaswap.netlify.app/images/tokens/planet.png"
+    },
+    {
       "name": "Wrapped Ether",
       "address": "0x4200000000000000000000000000000000000006",
       "symbol": "WETH",
@@ -28,12 +36,28 @@
       "logoURI": "https://tokens.pancakeswap.xyz/images/symbol/weth.png"
     },
     {
+      "name": "Wrapped PLANQ",
+      "address": "0x4200000000000000000000000000000000000006",
+      "symbol": "WPLQ",
+      "decimals": 18,
+      "chainId": 700707,
+      "logoURI": "https://planetopiaswap.netlify.app/images/chains/700707.png"
+    },
+    {
       "name": "USDC Base Goerli",
       "address": "0x2e9F75DF8839ff192Da27e977CD154FD1EAE03cf",
       "symbol": "USDC",
       "decimals": 18,
       "chainId": 84531,
       "logoURI": "https://planetopiaswap.xyz/images/tokens/0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d.png"
+    },
+    {
+      "name": "USDC Planq Network",
+      "address": "0x2e9F75DF8839ff192Da27e977CD154FD1EAE03cf",
+      "symbol": "USDC",
+      "decimals": 18,
+      "chainId": 700707,
+      "logoURI": "https://tokens.pancakeswap.finance/images/symbol/usdc.png"
     },
     {
       "name": "Wrapped BTC",
