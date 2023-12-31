@@ -15,7 +15,7 @@ import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useTranslation } from '@pancakeswap/localization'
 import useAuth from 'hooks/useAuth'
 import useNativeCurrency from 'hooks/useNativeCurrency'
-import useTokenBalance from 'hooks/useTokenBalance'
+import useTokenBalance, { useGetPlanetBalance } from 'hooks/useTokenBalance'
 import { ChainLogo } from 'components/Logo/ChainLogo'
 
 import { getBlockExploreLink, getBlockExploreName } from 'utils'
@@ -44,10 +44,9 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowNativeBalance, onDismiss 
   const wNativeToken = !isBSC ? WNATIVE[chainId] : null
   // const wBNBToken = WNATIVE[ChainId.BSC]
   const { balance: wNativeBalance, fetchStatus: wNativeFetchStatus } = useTokenBalance(wNativeToken?.address)
-  // const { balance: planetBalance, fetchStatus: planetFetchStatus } = useGetPlanetBalance()
 
   // const { balance: wBNBBalance, fetchStatus: wBNBFetchStatus } = useTokenBalance(wBNBToken?.address, true)
-  // const { balance: cakeBalance, fetchStatus: cakeFetchStatus } = useGetCakeBalance()
+  const { balance: planetBalance, fetchStatus: planetFetchStatus } = useGetPlanetBalance()
   const { logout } = useAuth()
 
   const handleLogout = () => {
@@ -112,14 +111,14 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowNativeBalance, onDismiss 
               )}
             </Flex>
           )}
-          {/* <Flex alignItems="center" justifyContent="space-between">
+          <Flex alignItems="center" justifyContent="space-between">
           <Text color="textSubtle">{t('PLANET Balance')}</Text>
           {planetFetchStatus !== FetchStatus.Fetched ? (
             <Skeleton height="22px" width="60px" />
           ) : (
             <Text>{formatBigNumber(planetBalance, 3)}</Text>
           )}
-        </Flex> */}
+        </Flex> 
         </Box>
       )}
       {/* <Box mb="24px">

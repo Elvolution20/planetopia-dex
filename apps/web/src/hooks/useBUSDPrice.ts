@@ -7,11 +7,11 @@ import {
   Price,
   Token,
   WNATIVE,
-  WBNB,
+  WFON,
   ERC20Token,
 } from '@pancakeswap/sdk'
 import { FAST_INTERVAL } from 'config/constants'
-import { BUSD, CAKE, USDC } from '@pancakeswap/tokens'
+import { BUSD, CAKE, PLANET, USDC, USDT } from '@pancakeswap/tokens'
 import { useMemo } from 'react'
 import useSWR from 'swr'
 import getLpAddress from 'utils/getLpAddress'
@@ -170,8 +170,8 @@ export const useCakeBusdPrice = (
   const { chainId } = useActiveChainId()
   const isTestnet = !forceMainnet && isChainTestnet(chainId)
   // Return bsc testnet cake if chain is testnet
-  const cake: Token = isTestnet ? CAKE[ChainId.BSC_TESTNET] : CAKE[ChainId.BSC]
-  return usePriceByPairs(BUSD[cake.chainId], cake)
+  const planet: Token = isTestnet ? PLANET[ChainId.FSC] : PLANET[ChainId.FSC]
+  return usePriceByPairs(USDT[planet.chainId], planet)
 }
 
 // @Note: only fetch from one pair
@@ -181,6 +181,6 @@ export const useBNBBusdPrice = (
   const { chainId } = useActiveChainId()
   const isTestnet = !forceMainnet && isChainTestnet(chainId)
   // Return bsc testnet wbnb if chain is testnet
-  const wbnb: Token = isTestnet ? WBNB[ChainId.BSC_TESTNET] : WBNB[ChainId.BSC]
-  return usePriceByPairs(BUSD[wbnb.chainId], wbnb)
+  const wfon: Token = isTestnet ? WFON[ChainId.FSC] : WFON[ChainId.FSC]
+  return usePriceByPairs(USDT[wfon.chainId], wfon)
 }

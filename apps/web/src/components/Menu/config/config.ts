@@ -74,7 +74,7 @@ const config: (
         // },
         {
           label: t('Bridge'),
-          href: 'https://app.multichain.org/#/router',
+          href: 'https://hieswap.com/',
           type: DropdownMenuItemType.EXTERNAL_LINK,
         },
       ].map((item) => addMenuItemSupported(item, chainId)),
