@@ -4,7 +4,6 @@ import FarmsBscTestnetPriceHelper from './97'
 import FarmsEthereumPriceHelper from './1'
 import FarmsGoerliPriceHelper from './5'
 import FarmsBaseGoerliPriceHelper from './84531'
-import FarmsPlanqTestnetPriceHelper from './700707'
 
 
 export const getFarmsPriceHelperLpFiles = (chainId: ChainId) => {
@@ -19,8 +18,6 @@ export const getFarmsPriceHelperLpFiles = (chainId: ChainId) => {
       return FarmsGoerliPriceHelper
     case ChainId.BASE_GOERLI:
       return FarmsBaseGoerliPriceHelper
-    case ChainId.PLANQ_TESTNET:
-      return FarmsPlanqTestnetPriceHelper
     default:
       return []
   }

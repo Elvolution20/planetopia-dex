@@ -1,6 +1,6 @@
 import { ChainId, JSBI, Percent, Token, WNATIVE } from '@pancakeswap/sdk'
 import { BigNumber } from '@ethersproject/bignumber'
-import { bscTokens, bscTestnetTokens, planqTestnetTokens, USDC, USDT, BUSD, WBTC_ETH, PLANET } from '@pancakeswap/tokens'
+import { bscTokens, bscTestnetTokens, USDC, USDT, BUSD, WBTC_ETH, PLANET } from '@pancakeswap/tokens'
 import { ChainMap, ChainTokenList } from './types'
 
 export const ROUTER_ADDRESS: ChainMap<string> = {
@@ -9,8 +9,6 @@ export const ROUTER_ADDRESS: ChainMap<string> = {
   [ChainId.BASE_GOERLI]: '0xeF02172d48685Cc9Fd2C06b71Bae9cedE4725853',
   [ChainId.BSC]: '0x10ED43C718714eb63d5aA57B78B54704E256024E',
   [ChainId.BSC_TESTNET]: '0xD99D1c33F9fC3444f8101754aBC46c52416550D1',
-  [ChainId.PLANQ_TESTNET]: '0xD99D1c33F9fC3444f8101754aBC46c52416550D1',
-
 }
 
 // used to construct intermediary pairs for trading
@@ -28,7 +26,6 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     bscTokens.usdc,
   ],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
-  [ChainId.PLANQ_TESTNET]: [planqTestnetTokens.wplq, planqTestnetTokens.planet, planqTestnetTokens.usdc],
 }
 
 /**
@@ -58,8 +55,6 @@ export const SUGGESTED_BASES: ChainTokenList = {
   [ChainId.BASE_GOERLI]: [],
   [ChainId.BSC]: [bscTokens.busd, bscTokens.cake, bscTokens.btcb],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
-  [ChainId.PLANQ_TESTNET]: [planqTestnetTokens.wplq, planqTestnetTokens.planet, planqTestnetTokens.usdc],
-
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
@@ -69,7 +64,6 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   [ChainId.GOERLI]: [USDC[ChainId.GOERLI], WNATIVE[ChainId.GOERLI], BUSD[ChainId.GOERLI]],
   [ChainId.BSC]: [bscTokens.wbnb, bscTokens.dai, bscTokens.busd, bscTokens.usdt, bscTokens.cake],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
-  [ChainId.PLANQ_TESTNET]: [planqTestnetTokens.wplq, planqTestnetTokens.planet, planqTestnetTokens.usdc],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {

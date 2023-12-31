@@ -27,15 +27,6 @@ export const PLANET_BASE_GOERLI = new ERC20Token(
   'https://planetopiaswap.xyz/',
 )
 
-export const PLANET_PLANQ_TESTNET = new ERC20Token(
-  ChainId.PLANQ_TESTNET,
-  '0x3D4dfAcddb9eD4B842c52557d762465dCeF803a9',
-  18,
-  'PLANET',
-  'Planetopia Token',
-  'https://planetopiaswap.xyz/',
-)
-
 export const USDC_BSC = new ERC20Token(
   ChainId.BSC,
   '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d',
@@ -76,14 +67,6 @@ export const USDC_BASE_GOERLI = new ERC20Token(
   18,
   'USDC',
   'test USD Coin',
-)
-
-export const USDC_PLANQ_TESTNET = new ERC20Token(
-  ChainId.PLANQ_TESTNET,
-  '0x2e9F75DF8839ff192Da27e977CD154FD1EAE03cf',
-  18,
-  'USDC',
-  'Test USD Coin',
 )
 
 export const USDT_BSC = new ERC20Token(
@@ -149,24 +132,12 @@ export const BUSD_BASE_GOERLI = new ERC20Token(
   'https://www.paxos.com/busd/',
 )
 
-export const BUSD_PLANQ_TESTNET = new ERC20Token(
-  ChainId.PLANQ_TESTNET,
-  '0xb809b9B2dc5e93CB863176Ea2D565425B03c0540',
-  18,
-  'BUSD',
-  'Binance USD',
-  'https://www.paxos.com/busd/',
-)
-
 export const BUSD: Record<ChainId, ERC20Token> = {
   [ChainId.ETHEREUM]: BUSD_ETH,
   [ChainId.GOERLI]: BUSD_GOERLI,
   [ChainId.BASE_GOERLI]: BUSD_BASE_GOERLI,
   [ChainId.BSC]: BUSD_BSC,
   [ChainId.BSC_TESTNET]: BUSD_TESTNET,
-  [ChainId.PLANQ_TESTNET]: BUSD_PLANQ_TESTNET,
-
-
 }
 
 export const CAKE = {
@@ -176,8 +147,7 @@ export const CAKE = {
 
 export const PLANET = {
   [ChainId.BASE_GOERLI]: PLANET_BASE_GOERLI,
-  [ChainId.PLANQ_TESTNET]: PLANET_PLANQ_TESTNET,
-
+  
 }
 
 export const USDC = {
@@ -186,8 +156,6 @@ export const USDC = {
   [ChainId.ETHEREUM]: USDC_ETH,
   [ChainId.GOERLI]: USDC_GOERLI,
   [ChainId.BASE_GOERLI]: USDC_BASE_GOERLI,
-  [ChainId.PLANQ_TESTNET]: USDC_PLANQ_TESTNET,
-
 }
 
 export const USDT = {

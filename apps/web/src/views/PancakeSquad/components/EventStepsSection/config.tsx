@@ -56,7 +56,7 @@ const stepsConfigBuilder = ({ t, userInfos, eventInfos, userStatus, account, the
         <>
           <Button
             as="a"
-            href="/swap?outputCurrency=0x3D4dfAcddb9eD4B842c52557d762465dCeF803a9&chain=planqTestnet"
+            href="/swap?outputCurrency=0x3D4dfAcddb9eD4B842c52557d762465dCeF803a9&chain=baseGoerli"
             target="_blank"
             width="100%"
           >

@@ -25,7 +25,6 @@ const BLOCKS_CLIENT_WITH_CHAIN = {
   [ChainId.BSC_TESTNET]: '',
   [ChainId.GOERLI]: '',
   [ChainId.BASE_GOERLI]: '',
-  [ChainId.PLANQ_TESTNET]: '',
 }
 
 
@@ -35,7 +34,6 @@ const INFO_CLIENT_WITH_CHAIN = {
   [ChainId.BSC_TESTNET]: '',
   [ChainId.GOERLI]: '',
   [ChainId.BASE_GOERLI]: '',
-  [ChainId.PLANQ_TESTNET]: '',
 }
 
 const blockClientWithChain = (chainId: ChainId) => {

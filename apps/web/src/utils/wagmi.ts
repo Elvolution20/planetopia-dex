@@ -38,35 +38,12 @@ const baseGoerli: Chain = {
   },
 };
 
-const planqTestnet: Chain = {
-  id: 700707, 
-  name: 'Planq Testnet',
-  network: 'planq-testnet',
-  nativeCurrency: {
-    decimals: 18,
-    name: 'Planq Testnet',
-    symbol: 'PLQ',
-  },
-  rpcUrls: {
-    public: { http: ['https://test.rpc.evm.physica.finance'] },
-    default: { http: ['https://test.rpc.evm.physica.finance'] },
-  },
-  blockExplorers: {
-    etherscan: { name: 'Planq Testnet Explorer', url: 'http://167.86.99.150:4000/' },
-    default: { name: 'Planq Testnet Explorer', url: 'http://167.86.99.150:4000/' },
-  },
-
-};
-
-
 const CHAINS = [
   // bsc, 
   // mainnet, 
   // bscTestnet, 
-  // goerli, 
-  // baseGoerli,
-  planqTestnet,
-]
+  goerli, 
+  baseGoerli]
 
 const getNodeRealUrl = (networkName: string) => {
   let host = null

@@ -8,7 +8,6 @@ export const CHAIN_QUERY_NAME = {
   [ChainId.BASE_GOERLI]: 'baseGoerli',
   [ChainId.BSC]: 'bsc',
   [ChainId.BSC_TESTNET]: 'bscTestnet',
-  [ChainId.PLANQ_TESTNET]: 'planqTestnet',
 }
 
 const CHAIN_QUERY_NAME_TO_ID = invert(CHAIN_QUERY_NAME)

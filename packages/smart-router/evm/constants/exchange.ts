@@ -1,5 +1,5 @@
 import { ChainId, Token, WBNB, WNATIVE } from '@pancakeswap/sdk'
-import { bscTokens, bscTestnetTokens, planqTestnetTokens, BUSD, USDC, USDT } from '@pancakeswap/tokens'
+import { bscTokens, bscTestnetTokens, BUSD, USDC, USDT } from '@pancakeswap/tokens'
 
 import { ChainMap, ChainTokenList } from '../types'
 
@@ -9,8 +9,6 @@ export const ROUTER_ADDRESS: ChainMap<string> = {
   [ChainId.BASE_GOERLI]: '0xeF02172d48685Cc9Fd2C06b71Bae9cedE4725853',
   [ChainId.BSC]: '0x10ED43C718714eb63d5aA57B78B54704E256024E',
   [ChainId.BSC_TESTNET]: '0xD99D1c33F9fC3444f8101754aBC46c52416550D1',
-  [ChainId.PLANQ_TESTNET]: '0xD99D1c33F9fC3444f8101754aBC46c52416550D1',
-
 }
 
 export const STABLE_SWAP_INFO_ADDRESS: ChainMap<string> = {
@@ -19,8 +17,6 @@ export const STABLE_SWAP_INFO_ADDRESS: ChainMap<string> = {
   [ChainId.BASE_GOERLI]: '',
   [ChainId.BSC]: '0xa680d27f63Fa5E213C502d1B3Ca1EB6a3C1b31D6',
   [ChainId.BSC_TESTNET]: '0xaE6C14AAA753B3FCaB96149e1E10Bc4EDF39F546',
-  [ChainId.PLANQ_TESTNET]: '',
-
 }
 
 // used to construct intermediary pairs for trading
@@ -44,7 +40,6 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     bscTokens.usdc,
   ],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
-  [ChainId.PLANQ_TESTNET]: [planqTestnetTokens.wplq, planqTestnetTokens.planet, planqTestnetTokens.usdc],
 }
 
 /**
@@ -78,7 +73,6 @@ export const SUGGESTED_BASES: ChainTokenList = {
   [ChainId.BASE_GOERLI]: [USDC[ChainId.BASE_GOERLI], WNATIVE[ChainId.BASE_GOERLI], BUSD[ChainId.BASE_GOERLI]],
   [ChainId.BSC]: [bscTokens.busd, bscTokens.cake, bscTokens.btcb],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
-  [ChainId.PLANQ_TESTNET]: [planqTestnetTokens.wplq, planqTestnetTokens.planet, planqTestnetTokens.usdc],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
@@ -94,7 +88,6 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   [ChainId.BASE_GOERLI]: [USDC[ChainId.BASE_GOERLI], WNATIVE[ChainId.BASE_GOERLI], BUSD[ChainId.BASE_GOERLI]],
   [ChainId.BSC]: [bscTokens.wbnb, bscTokens.dai, bscTokens.busd, bscTokens.usdt, bscTokens.cake],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
-  [ChainId.PLANQ_TESTNET]: [planqTestnetTokens.wplq, planqTestnetTokens.planet, planqTestnetTokens.usdc],
 }
 
 export const PINNED_PAIRS: {

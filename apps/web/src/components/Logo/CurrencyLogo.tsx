@@ -41,8 +41,8 @@ export default function CurrencyLogo({
   }, [currency, uriLocations])
 
   if (currency?.isNative) {
-    if (currency.chainId === ChainId.PLANQ_TESTNET) {
-      return <img src="/images/chains/700707.png" width={size} style={style} alt="Planq" />
+    if (currency.chainId === ChainId.BASE_GOERLI) {
+      return <img src="/images/chains/1.png" width={size} style={style} alt="Ethereum" />
     }
     return (
       <StyledLogo

@@ -44,7 +44,7 @@ it("renders correctly", () => {
         activeItem="Trade"
         activeSubItem="Exchange"
         buyCakeLabel="Buy PLANET"
-        buyCakeLink="/swap?outputCurrency=0x3D4dfAcddb9eD4B842c52557d762465dCeF803a9&chain=planqTestnet"
+        buyCakeLink="/swap?outputCurrency=0x3D4dfAcddb9eD4B842c52557d762465dCeF803a9&chain=baseGoerli"
       >
         body
       </Menu>

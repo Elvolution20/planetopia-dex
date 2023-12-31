@@ -5,7 +5,6 @@ import PoolsGoerliPriceHelper from './pools/5'
 import PoolsBscPriceHelper from './pools/56'
 import PoolsBscTestnetPriceHelper from './pools/97'
 import PoolsBaseGoerliPriceHelper from './pools/84531'
-import PoolsPlanqTestnetPriceHelper from './pools/700707'
 
 export { getFarmsPriceHelperLpFiles }
 
@@ -21,8 +20,6 @@ export const getPoolsPriceHelperLpFiles = (chainId: ChainId) => {
       return PoolsGoerliPriceHelper
     case ChainId.BASE_GOERLI:
       return PoolsBaseGoerliPriceHelper  
-    case ChainId.PLANQ_TESTNET:
-      return PoolsPlanqTestnetPriceHelper  
     default:
       return []
   }

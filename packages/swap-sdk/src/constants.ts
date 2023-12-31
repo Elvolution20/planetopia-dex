@@ -7,7 +7,6 @@ export enum ChainId {
   BASE_GOERLI = 84531,
   BSC = 56,
   BSC_TESTNET = 97,
-  PLANQ_TESTNET = 700707,
 }
 
 export const ZERO_PERCENT = new Percent('0')
@@ -26,8 +25,6 @@ export const FACTORY_ADDRESS_MAP: Record<number, string> = {
   [ChainId.BASE_GOERLI]: FACTORY_ADDRESS_BASE,
   [ChainId.BSC]: FACTORY_ADDRESS,
   [ChainId.BSC_TESTNET]: '0x6725f303b657a9451d8ba641348b6761a6cc7a17',
-  [ChainId.PLANQ_TESTNET]: '0x6725f303b657a9451d8ba641348b6761a6cc7a17',
-
 }
 export const INIT_CODE_HASH = '0x00fb7f630766e6a796048ea87d01acd3068e8ff67d078148a3fa3f4a84f69bd5'
 
@@ -40,8 +37,6 @@ export const INIT_CODE_HASH_MAP: Record<number, string> = {
   [ChainId.BASE_GOERLI]: INIT_CODE_HASH_BASE,
   [ChainId.BSC]: INIT_CODE_HASH,
   [ChainId.BSC_TESTNET]: '0xd0d4c4cd0848c93cb4fd1f498d7013ee6bfb25783ea21593d5834f5d250ece66',
-  [ChainId.PLANQ_TESTNET]: '0xd0d4c4cd0848c93cb4fd1f498d7013ee6bfb25783ea21593d5834f5d250ece66',
-
 }
 
 export const WETH9 = {
@@ -98,24 +93,12 @@ export const WBNB = {
   ),
 }
 
-export const WPLQ = {
-  [ChainId.PLANQ_TESTNET]: new ERC20Token(
-    ChainId.PLANQ_TESTNET,
-    '0x2b1FC3C57C034300d46Fa24F12cE24554F26A86d',
-    18,
-    'WPLQ',
-    'Wrapped Planq',
-    'https://www.planq.network'
-  ),
-}
-
 export const WNATIVE: Record<number, ERC20Token> = {
   [ChainId.ETHEREUM]: WETH9[ChainId.ETHEREUM],
   [ChainId.GOERLI]: WETH9[ChainId.GOERLI],
   [ChainId.BASE_GOERLI]: WETH9[ChainId.BASE_GOERLI],
   [ChainId.BSC]: WBNB[ChainId.BSC],
   [ChainId.BSC_TESTNET]: WBNB[ChainId.BSC_TESTNET],
-  [ChainId.PLANQ_TESTNET]: WPLQ[ChainId.PLANQ_TESTNET],
 }
 
 export const NATIVE: Record<
@@ -137,11 +120,6 @@ export const NATIVE: Record<
   [ChainId.BSC_TESTNET]: {
     name: 'Binance Chain Native Token',
     symbol: 'tBNB',
-    decimals: 18,
-  },
-  [ChainId.PLANQ_TESTNET]: {
-    name: 'Planq Network Token',
-    symbol: 'PLQ',
     decimals: 18,
   },
 }
