@@ -20,7 +20,7 @@ export const CAKE_TESTNET = new ERC20Token(
 
 export const PLANET_FSC = new ERC20Token(
   ChainId.FSC,
-  '0x3D4dfAcddb9eD4B842c52557d762465dCeF803a9',
+  '0x828a9CA1347B3b3525FD94700B78bB048dB1eF8B',
   18,
   'PLANET',
   'Planetopia Token',
