@@ -2,7 +2,7 @@ import { TranslateFunction } from '@pancakeswap/localization'
 import { SalesSectionProps } from '.'
 
 export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
-  headingText: t('Trade any token in seconds on Base Goerli Chain.'),
+  headingText: t('Trade any token in seconds on Fon Smart Chain.'),
   bodyText: t('Join the space trade revolution - no registration, no hassle, just endless possibilities.'),
   reverse: false,
   primaryButton: {

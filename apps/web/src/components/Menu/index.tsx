@@ -59,7 +59,7 @@ const Menu = (props) => {
         activeItem={activeMenuItem?.href}
         activeSubItem={activeSubMenuItem?.href}
         buyCakeLabel={t('Buy PLANET')}
-        buyCakeLink="/swap?outputCurrency=0x3D4dfAcddb9eD4B842c52557d762465dCeF803a9&chain=baseGoerli"
+        buyCakeLink="/swap?outputCurrency=0x3D4dfAcddb9eD4B842c52557d762465dCeF803a9&chain=fsc"
         {...props}
       />
     </>

@@ -3,7 +3,7 @@ import { Token } from '../src'
 enum ChainId {
   ETHEREUM = 1,
   GOERLI = 5,
-  BASE_GOERLI = 84531,
+  FSC = 201022,
   BSC = 56,
   BSC_TESTNET = 97,
 }
