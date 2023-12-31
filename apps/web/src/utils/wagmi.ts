@@ -23,7 +23,7 @@ const fsc: Chain = {
     symbol: 'FON',
   },
   rpcUrls: {
-    public: { http: ['https://fsc-dataseed1.fonscan.io'] },
+    public: { http: ['https://fsc-dataseed2.fonscan.io'] },
     default: { http: ['https://fsc-dataseed1.fonscan.io'] },
   },
   blockExplorers: {
