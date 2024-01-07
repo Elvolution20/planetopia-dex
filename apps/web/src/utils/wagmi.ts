@@ -13,22 +13,27 @@ import { jsonRpcProvider } from 'wagmi/providers/jsonRpc'
 import { SafeConnector } from './safeConnector'
 
 
-const fsc: Chain = {
-  id: 201022, 
-  name: 'Fon Smart Chain',
-  network: 'fsc',
+const baseGoerli: Chain = {
+  id: 84531, // Replace with the actual ID of Base Goerli
+  name: 'Base Goerli',
+  network: 'base-goerli',
   nativeCurrency: {
     decimals: 18,
-    name: 'Fon Smart Chain',
-    symbol: 'FON',
+    name: 'Base Goerli',
+    symbol: 'ETH',
   },
   rpcUrls: {
+<<<<<<< HEAD
     public: { http: ['https://fsc-dataseed2.fonscan.io'] },
     default: { http: ['https://fsc-dataseed1.fonscan.io'] },
+=======
+    public: { http: ['https://goerli.base.org'] },
+    default: { http: ['https://goerli.base.org'] },
+>>>>>>> parent of 438145e (Update on Fon)
   },
   blockExplorers: {
-    etherscan: { name: 'Fon Smart Chain Explorer', url: 'https://fonscan.io' },
-    default: { name: 'Fon Smart Chain Explorer', url: 'https://fonscan.io' },
+    etherscan: { name: 'Base Goerli Explorer', url: 'https://goerli.basescan.org' },
+    default: { name: 'Base Goerli Explorer', url: 'https://goerli.basescan.org' },
   },
   contracts: {
     multicall3: {
@@ -42,8 +47,8 @@ const CHAINS = [
   // bsc, 
   // mainnet, 
   // bscTestnet, 
-  // goerli, 
-  fsc]
+  goerli, 
+  baseGoerli]
 
 const getNodeRealUrl = (networkName: string) => {
   let host = null

@@ -18,8 +18,8 @@ export const CAKE_TESTNET = new ERC20Token(
   'https://planetopiaswap.xyz/',
 )
 
-export const PLANET_FSC = new ERC20Token(
-  ChainId.FSC,
+export const PLANET_BASE_GOERLI = new ERC20Token(
+  ChainId.BASE_GOERLI,
   '0x3D4dfAcddb9eD4B842c52557d762465dCeF803a9',
   18,
   'PLANET',
@@ -61,12 +61,12 @@ export const USDC_GOERLI = new ERC20Token(
   'test USD Coin',
 )
 
-export const USDT_FSC = new ERC20Token(
-  ChainId.FSC,
-  '0x9a9eD7440a3850c4D7240c9FcA8B7C96802615f0',
+export const USDC_BASE_GOERLI = new ERC20Token(
+  ChainId.BASE_GOERLI,
+  '0x2e9F75DF8839ff192Da27e977CD154FD1EAE03cf',
   18,
-  'USDT',
-  'Tether USD',
+  'USDC',
+  'test USD Coin',
 )
 
 export const USDT_BSC = new ERC20Token(
@@ -123,8 +123,8 @@ export const BUSD_GOERLI = new ERC20Token(
   'https://www.paxos.com/busd/',
 )
 
-export const BUSD_FSC = new ERC20Token(
-  ChainId.FSC,
+export const BUSD_BASE_GOERLI = new ERC20Token(
+  ChainId.BASE_GOERLI,
   '0xb809b9B2dc5e93CB863176Ea2D565425B03c0540',
   18,
   'BUSD',
@@ -135,7 +135,7 @@ export const BUSD_FSC = new ERC20Token(
 export const BUSD: Record<ChainId, ERC20Token> = {
   [ChainId.ETHEREUM]: BUSD_ETH,
   [ChainId.GOERLI]: BUSD_GOERLI,
-  [ChainId.FSC]: BUSD_FSC,
+  [ChainId.BASE_GOERLI]: BUSD_BASE_GOERLI,
   [ChainId.BSC]: BUSD_BSC,
   [ChainId.BSC_TESTNET]: BUSD_TESTNET,
 }
@@ -146,7 +146,7 @@ export const CAKE = {
 }
 
 export const PLANET = {
-  [ChainId.FSC]: PLANET_FSC,
+  [ChainId.BASE_GOERLI]: PLANET_BASE_GOERLI,
   
 }
 
@@ -155,13 +155,12 @@ export const USDC = {
   [ChainId.BSC_TESTNET]: USDC_TESTNET,
   [ChainId.ETHEREUM]: USDC_ETH,
   [ChainId.GOERLI]: USDC_GOERLI,
+  [ChainId.BASE_GOERLI]: USDC_BASE_GOERLI,
 }
 
 export const USDT = {
   [ChainId.BSC]: USDT_BSC,
   [ChainId.ETHEREUM]: USDT_ETH,
-  [ChainId.FSC]: USDT_FSC,
-
 }
 
 export const WBTC_ETH = new ERC20Token(

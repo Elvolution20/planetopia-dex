@@ -41,8 +41,8 @@ export default function CurrencyLogo({
   }, [currency, uriLocations])
 
   if (currency?.isNative) {
-    if (currency.chainId === ChainId.FSC) {
-      return <img src="/images/chains/201022.png" width={size} style={style} alt="Ethereum" />
+    if (currency.chainId === ChainId.BASE_GOERLI) {
+      return <img src="/images/chains/1.png" width={size} style={style} alt="Ethereum" />
     }
     return (
       <StyledLogo

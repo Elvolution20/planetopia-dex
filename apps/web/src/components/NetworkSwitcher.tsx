@@ -70,10 +70,10 @@ const WrongNetworkSelect = ({ switchNetwork, chainId }) => {
     },
   )
   const { chain } = useNetwork()
-  const localChainId = useLocalNetworkChain() || ChainId.FSC
+  const localChainId = useLocalNetworkChain() || ChainId.BASE_GOERLI
   const [, setSessionChainId] = useSessionChainId()
 
-  const localChainName = chains.find((c) => c.id === localChainId)?.name ?? 'FSC'
+  const localChainName = chains.find((c) => c.id === localChainId)?.name ?? 'BASE'
 
   const [ref1, isHover] = useHover<HTMLButtonElement>()
 

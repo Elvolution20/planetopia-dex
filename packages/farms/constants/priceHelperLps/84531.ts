@@ -1,13 +1,13 @@
-import { fscTokens } from '@pancakeswap/tokens'
+import { baseTestnetTokens } from '@pancakeswap/tokens'
 import { SerializedFarmConfig } from '@pancakeswap/farms'
 
 const priceHelperLps: SerializedFarmConfig[] = [
   {
     pid: null,
-    lpSymbol: 'WFON-USDT LP',
+    lpSymbol: 'WETH-USDC LP',
     lpAddress: '0xf5bf0C34d3c428A74Ceb98d27d38d0036C587200',
-    quoteToken: fscTokens.usdt,
-    token: fscTokens.wfon,
+    quoteToken: baseTestnetTokens.usdc,
+    token: baseTestnetTokens.weth,
   },
 ].map((p) => ({ ...p, token: p.token.serialize, quoteToken: p.quoteToken.serialize }))
 
