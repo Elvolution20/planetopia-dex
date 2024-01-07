@@ -23,13 +23,8 @@ const baseGoerli: Chain = {
     symbol: 'ETH',
   },
   rpcUrls: {
-<<<<<<< HEAD
-    public: { http: ['https://fsc-dataseed2.fonscan.io'] },
-    default: { http: ['https://fsc-dataseed1.fonscan.io'] },
-=======
     public: { http: ['https://goerli.base.org'] },
     default: { http: ['https://goerli.base.org'] },
->>>>>>> parent of 438145e (Update on Fon)
   },
   blockExplorers: {
     etherscan: { name: 'Base Goerli Explorer', url: 'https://goerli.basescan.org' },

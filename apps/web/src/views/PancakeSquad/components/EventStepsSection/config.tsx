@@ -56,11 +56,7 @@ const stepsConfigBuilder = ({ t, userInfos, eventInfos, userStatus, account, the
         <>
           <Button
             as="a"
-<<<<<<< HEAD
-            href="/swap?outputCurrency=0x828a9CA1347B3b3525FD94700B78bB048dB1eF8B&chain=fsc"
-=======
             href="/swap?outputCurrency=0x3D4dfAcddb9eD4B842c52557d762465dCeF803a9&chain=baseGoerli"
->>>>>>> parent of 438145e (Update on Fon)
             target="_blank"
             width="100%"
           >
