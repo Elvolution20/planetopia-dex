@@ -14,10 +14,10 @@
     {
       "name": "Planetopia Token",
       "symbol": "PLANET",
-      "address": "0x828a9CA1347B3b3525FD94700B78bB048dB1eF8B",
+      "address": "0x3D4dfAcddb9eD4B842c52557d762465dCeF803a9",
       "chainId": 201022,
       "decimals": 18,
-      "logoURI": "https://planetopiaswap.netlify.app/images/tokens/planet.png"
+      "logoURI": "https://planetopiaswap.xyz/images/tokens/planet.png"
     },
     {
       "name": "Wrapped Fon",
