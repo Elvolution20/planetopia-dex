@@ -1,6 +1,6 @@
 import { useAccount } from 'wagmi'
 import BigNumber from 'bignumber.js'
-import { CAKE, PLANET } from '@pancakeswap/tokens'
+import { CAKE } from '@pancakeswap/tokens'
 // import { PLANET } from '@pancakeswap/tokens'
 import { FAST_INTERVAL } from 'config/constants'
 import { BigNumber as EthersBigNumber } from '@ethersproject/bignumber'
@@ -9,12 +9,12 @@ import { ChainId } from '@pancakeswap/sdk'
 import { useMemo } from 'react'
 import useSWR from 'swr'
 import { BIG_ZERO } from '@pancakeswap/utils/bigNumber'
-import { bscRpcProvider, fscRpcProvider } from 'utils/providers'
+import { bscRpcProvider } from 'utils/providers'
 import { useWeb3React } from '@pancakeswap/wagmi'
 import { useTokenContract } from './useContract'
 import { useSWRContract } from './useSWRContract'
 
-const useTokenBalance = (tokenAddress: string, forceFSC?: boolean) => {
+const useTokenBalance = (tokenAddress: string, forceBSC?: boolean) => {
   const { address: account } = useAccount()
 
   const contract = useTokenContract(tokenAddress, false)
@@ -23,12 +23,12 @@ const useTokenBalance = (tokenAddress: string, forceFSC?: boolean) => {
     () =>
       account
         ? {
-            contract: forceFSC ? contract.connect(fscRpcProvider) : contract,
+            contract: forceBSC ? contract.connect(bscRpcProvider) : contract,
             methodName: 'balanceOf',
             params: [account],
           }
         : null,
-    [account, contract, forceFSC],
+    [account, contract, forceBSC],
   )
 
   const { data, status, ...rest } = useSWRContract(key as any, {
@@ -54,14 +54,6 @@ export const useGetBnbBalance = () => {
 export const useGetCakeBalance = () => {
   const { chainId } = useWeb3React()
   const { balance, fetchStatus } = useTokenBalance(CAKE[chainId]?.address || CAKE[ChainId.BSC]?.address, true)
-
-  // TODO: Remove ethers conversion once useTokenBalance is converted to ethers.BigNumber
-  return { balance: EthersBigNumber.from(balance.toString()), fetchStatus }
-}
-
-export const useGetPlanetBalance = () => {
-  const { chainId } = useWeb3React()
-  const { balance, fetchStatus } = useTokenBalance(PLANET[chainId]?.address || PLANET[ChainId.FSC]?.address, true)
 
   // TODO: Remove ethers conversion once useTokenBalance is converted to ethers.BigNumber
   return { balance: EthersBigNumber.from(balance.toString()), fetchStatus }
